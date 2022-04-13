@@ -103,4 +103,25 @@ public class MyController
         }
         return new Test3();
     }
+
+    @RequestMapping("/test6")
+    public String test6_html()
+    {
+        return "test6";
+    }
+
+    @RequestMapping(value = "/server6")
+    @ResponseBody
+    public Test3 test6()
+    {
+        try
+        {
+            Thread.sleep(3000);
+        }
+        catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+        return new Test3();
+    }
 }

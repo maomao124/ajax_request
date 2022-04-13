@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：ajax_request
+  File name(文件名): test6
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/13
+  Time(创建时间)： 23:03
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #result {
+            border: 2px solid skyblue;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<button id="button">点击发送ajax请求-重复发送问题</button>
+<button id="button1">取消发送</button>
+
+<div id="result">
+
+</div>
+
+<script>
+    var button = document.getElementById('button');
+    var button1 = document.getElementById("button1");
+    var result = document.getElementById('result');
+
+    //XMLHttpRequest对象
+    let xhr;
+    //是否正在发送请求
+    let isSending = false;
+
+    button.onclick = function ()
+    {
+        //如果正在发送请求
+        if (isSending === true)
+        {
+            //取消正在发送的请求
+            xhr.abort();
+        }
+
+        //发起异步请求
+        xhr = new XMLHttpRequest();
+        //设置响应信息为json
+        xhr.responseType = "json";
+        //超时设置，单位为毫秒
+        xhr.timeout = 5000;
+        xhr.ontimeout = function ()
+        {
+            alert("请求超时，请稍后再试！");
+        }
+        //初始化，设置请求方式和url
+        xhr.open("post", "/server6?a=12&b=29&c=233&message=saa");
+        //发送异步请求
+        isSending = true;
+        xhr.send();
+
+        xhr.onreadystatechange = function ()
+        {
+            //状态为4时处理
+            if (xhr.readyState === 4)
+            {
+                //落在200-300之间处理
+                if (xhr.status >= 200 && xhr.status < 300)
+                {
+                    //将状态设置成false
+                    isSending = false;
+                    console.log(xhr.response);
+                    result.innerHTML = xhr.response.message;
+                    console.log(xhr.response)
+                }
+            }
+        }
+    }
+
+    button1.onclick = function ()
+    {
+        //取消请求
+        xhr.abort();
+    }
+</script>
+</body>
+</html>
