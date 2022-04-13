@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：ajax_request
+  File name(文件名): test3
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/13
+  Time(创建时间)： 22:28
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #result {
+            border: 2px solid skyblue;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<button id="button">点击发送ajax请求-json</button>
+
+<div id="result">
+
+</div>
+
+<script>
+    var button = document.getElementById('button');
+    var result = document.getElementById('result');
+
+    button.onclick = function ()
+    {
+        //发起异步请求
+        const xhr = new XMLHttpRequest();
+        //设置响应信息为json
+        xhr.responseType = "json";
+        //初始化，设置请求方式和url
+        xhr.open("post", "/server3?a=12&b=29&c=233&message=saa");
+        //发送异步请求
+        xhr.send();
+
+        xhr.onreadystatechange = function ()
+        {
+            //状态为4时处理
+            if (xhr.readyState === 4)
+            {
+                //落在200-300之间处理
+                if (xhr.status >= 200 && xhr.status < 300)
+                {
+                    console.log(xhr.response);
+                    result.innerHTML = xhr.response.message;
+                    console.log(xhr.response)
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
