@@ -1,5 +1,23 @@
-2022-04-13 23:09:21.329  INFO 3080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-13 23:09:21.343  INFO 3080 --- [main] mao.ajax_request.AjaxRequestApplication  : Started AjaxRequestApplication in 1.209 seconds (JVM running for 1.652)
-2022-04-13 23:09:23.844  INFO 3080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-13 23:09:23.844  INFO 3080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-04-13 23:09:23.845  INFO 3080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-14 16:11:03.578  INFO 4920 --- [main] mao.ajax_request.AjaxRequestApplication  : Starting AjaxRequestApplication using Java 16.0.2 on mao with PID 4920 (H:\程序\大三下期\ajax请求\target\classes started by mao in H:\程序\大三下期\ajax请求)
+2022-04-14 16:11:03.583 DEBUG 4920 --- [main] mao.ajax_request.AjaxRequestApplication  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-14 16:11:03.583  INFO 4920 --- [main] mao.ajax_request.AjaxRequestApplication  : The following 1 profile is active: "dev"
+2022-04-14 16:11:04.244  INFO 4920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-14 16:11:04.252  INFO 4920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 16:11:04.252  INFO 4920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-14 16:11:04.336  INFO 4920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 16:11:04.336  INFO 4920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 716 ms
+2022-04-14 16:11:04.601  INFO 4920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-14 16:11:04.611  INFO 4920 --- [main] mao.ajax_request.AjaxRequestApplication  : Started AjaxRequestApplication in 1.366 seconds (JVM running for 2.899)
+2022-04-14 16:12:50.307  INFO 4920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-14 16:12:50.307  INFO 4920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-14 16:12:50.307  INFO 4920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-14 16:15:19.250  INFO 7588 --- [main] mao.ajax_request.AjaxRequestApplication  : Starting AjaxRequestApplication using Java 16.0.2 on mao with PID 7588 (H:\程序\大三下期\ajax请求\target\classes started by mao in H:\程序\大三下期\ajax请求)
+2022-04-14 16:15:19.252 DEBUG 7588 --- [main] mao.ajax_request.AjaxRequestApplication  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-14 16:15:19.253  INFO 7588 --- [main] mao.ajax_request.AjaxRequestApplication  : The following 1 profile is active: "dev"
+2022-04-14 16:15:19.828  INFO 7588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-14 16:15:19.835  INFO 7588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 16:15:19.835  INFO 7588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-14 16:15:19.911  INFO 7588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 16:15:19.911  INFO 7588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 623 ms
+2022-04-14 16:15:20.150  INFO 7588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-14 16:15:20.159  INFO 7588 --- [main] mao.ajax_request.AjaxRequestApplication  : Started AjaxRequestApplication in 1.229 seconds (JVM running for 1.772)

@@ -56,16 +56,14 @@ Project name(项目名称)：ajax_request
         xhr.responseType = "json";
         //超时设置，单位为毫秒
         xhr.timeout = 5000;
-        //超时的回调函数
         xhr.ontimeout = function ()
         {
             alert("请求超时，请稍后再试！");
         }
         //初始化，设置请求方式和url
         xhr.open("post", "/server6?a=12&b=29&c=233&message=saa");
-        //设置状态为正在发送
-        isSending = true;
         //发送异步请求
+        isSending = true;
         xhr.send();
 
         xhr.onreadystatechange = function ()
@@ -80,6 +78,7 @@ Project name(项目名称)：ajax_request
                     isSending = false;
                     console.log(xhr.response);
                     result.innerHTML = xhr.response.message;
+                    console.log(xhr.response)
                 }
             }
         }

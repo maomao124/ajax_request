@@ -1,0 +1,5 @@
+2022-04-13 23:09:21.329  INFO 3080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-13 23:09:21.343  INFO 3080 --- [main] mao.ajax_request.AjaxRequestApplication  : Started AjaxRequestApplication in 1.209 seconds (JVM running for 1.652)
+2022-04-13 23:09:23.844  INFO 3080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-13 23:09:23.844  INFO 3080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-13 23:09:23.845  INFO 3080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
