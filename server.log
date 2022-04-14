@@ -21,3 +21,17 @@
 2022-04-14 16:15:19.911  INFO 7588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 623 ms
 2022-04-14 16:15:20.150  INFO 7588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-04-14 16:15:20.159  INFO 7588 --- [main] mao.ajax_request.AjaxRequestApplication  : Started AjaxRequestApplication in 1.229 seconds (JVM running for 1.772)
+2022-04-14 16:22:18.858  INFO 16640 --- [main] mao.ajax_request.AjaxRequestApplication  : Starting AjaxRequestApplication using Java 16.0.2 on mao with PID 16640 (H:\程序\大三下期\ajax请求\target\classes started by mao in H:\程序\大三下期\ajax请求)
+2022-04-14 16:22:18.860 DEBUG 16640 --- [main] mao.ajax_request.AjaxRequestApplication  : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-14 16:22:18.861  INFO 16640 --- [main] mao.ajax_request.AjaxRequestApplication  : The following 1 profile is active: "dev"
+2022-04-14 16:22:19.437  INFO 16640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-14 16:22:19.444  INFO 16640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-14 16:22:19.445  INFO 16640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-14 16:22:19.521  INFO 16640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-14 16:22:19.521  INFO 16640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 623 ms
+2022-04-14 16:22:19.742  INFO 16640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-14 16:22:19.751  INFO 16640 --- [main] mao.ajax_request.AjaxRequestApplication  : Started AjaxRequestApplication in 1.216 seconds (JVM running for 1.676)
+2022-04-14 16:22:51.335  INFO 17560 --- [main] m.a.AjaxRequestApplicationTests          : Starting AjaxRequestApplicationTests using Java 16.0.2 on mao with PID 17560 (started by mao in H:\程序\大三下期\ajax请求)
+2022-04-14 16:22:51.336 DEBUG 17560 --- [main] m.a.AjaxRequestApplicationTests          : Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-14 16:22:51.337  INFO 17560 --- [main] m.a.AjaxRequestApplicationTests          : The following 1 profile is active: "dev"
+2022-04-14 16:22:52.760  INFO 17560 --- [main] m.a.AjaxRequestApplicationTests          : Started AjaxRequestApplicationTests in 1.808 seconds (JVM running for 2.649)
